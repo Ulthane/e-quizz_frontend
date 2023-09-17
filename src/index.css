@@ -1,0 +1,14 @@
+body, html, #root {
+  height: 100%;
+  background-color: #303633;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  margin: auto;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: content-box;
+}
+

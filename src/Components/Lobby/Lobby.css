@@ -1,0 +1,199 @@
+.neonTextBase {
+  font-size: 6.2rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 7px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255), 0 0 21px rgb(255, 255, 255), 0 0 42px #7EA2AA, 0 0 82px #7EA2AA, 0 0 92px #7EA2AA, 0 0 102px #7EA2AA, 0 0 151px #7EA2AA;
+}
+
+.neonTextFlash {
+  animation: flicker 1.5s infinite alternate;
+  font-size: 6.2rem;
+  color: rgb(255, 255, 255);
+}
+
+.borderNeon {
+  border: 0.2rem solid rgb(255, 255, 255);
+  border-radius: 2rem;
+  padding: 0.75em;
+  padding-top: 0.3em;
+  box-shadow: 0 0 0.2rem rgb(255, 255, 255), 0 0 0.2rem rgb(255, 255, 255), 0 0 2rem #7EA2AA, 0 0 0.8rem #7EA2AA, 0 0 2.8rem #7EA2AA, inset 0 0 1.3rem #7EA2AA;
+}
+
+.infoCard {
+  background-color: #48514d;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 15px -1px #202020;
+}
+.infoCard.lobby {
+  height: 460px;
+}
+.infoCard.play {
+  height: 324px;
+}
+.infoCard.question {
+  height: 60px;
+  padding: 10px;
+  border-radius: 0.5em;
+}
+
+.roomJoin.input {
+  border: none;
+  width: 250px;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  padding: 10px;
+  background-color: #242926;
+  color: rgb(255, 255, 255);
+}
+.roomJoin.input:focus {
+  outline: none;
+}
+.roomJoin.button {
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+.roomJoin.button.join {
+  background-color: #7EA2AA;
+}
+.roomJoin.button.join:hover {
+  background-color: #6f97a0;
+}
+.roomJoin.button.copy {
+  background-color: #AA867E;
+}
+.roomJoin.button.copy:hover {
+  background-color: #a0786f;
+}
+.roomJoin.button.change {
+  background-color: #b097ce;
+}
+.roomJoin.button.change:hover {
+  background-color: #a386c6;
+}
+
+.cardPlayer {
+  background-color: #242926;
+  color: white;
+  min-height: 50px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 1em;
+  box-shadow: 2px 2px 15px -1px #202020;
+  font-weight: bold;
+  justify-content: space-between;
+  padding-right: 25px;
+}
+
+.startButton {
+  margin-top: 25px;
+  background: transparent;
+  color: rgb(255, 255, 255);
+  border: none;
+  width: 100px;
+  padding: 10px;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.2rem rgb(255, 255, 255), 0 0 0.2rem rgb(255, 255, 255), 0 0 1rem #7EA2AA, 0 0 0.5rem #7EA2AA, 0 0 1rem #7EA2AA, inset 0 0 1rem #7EA2AA;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  animation: pulsate 2s ease-in-out infinite alternate;
+}
+.startButton:disabled {
+  pointer-events: none;
+  opacity: 0.75;
+  box-shadow: none !important;
+  border: 1px solid rgb(255, 255, 255);
+}
+.startButton.easy:hover {
+  box-shadow: 0 0 0.2rem rgb(255, 255, 255), 0 0 0.2rem rgb(255, 255, 255), 0 0 1rem #64a791, 0 0 0.5rem #64a791, 0 0 1rem #64a791, inset 0 0 1rem #64a791;
+  background-color: #64a791;
+  animation: pulsateEasy 2s ease-in-out infinite alternate;
+}
+.startButton.medium:hover {
+  box-shadow: 0 0 0.2rem rgb(255, 255, 255), 0 0 0.2rem rgb(255, 255, 255), 0 0 2rem #5966a7, 0 0 0.8rem #5966a7, 0 0 2.8rem #5966a7, inset 0 0 1.3rem #5966a7;
+  background-color: #5966a7;
+  animation: pulsateMedium 2s ease-in-out infinite alternate;
+}
+.startButton.hard:hover {
+  box-shadow: 0 0 0.2rem rgb(255, 255, 255), 0 0 0.2rem rgb(255, 255, 255), 0 0 2rem #9C7A97, 0 0 0.8rem #9C7A97, 0 0 2.8rem #9C7A97, inset 0 0 1.3rem #9C7A97;
+  background-color: #9C7A97;
+  animation: pulsateHard 2s ease-in-out infinite alternate;
+}
+
+.rc-slider.disabled {
+  opacity: 0.4;
+  background-color: transparent;
+}
+
+.rc-slider-track {
+  background-color: #7EA2AA !important;
+}
+
+.rc-slider-handle {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  margin-top: -5px;
+  background-color: #fff;
+  border: solid 2px #7EA2AA !important;
+  border-radius: 50%;
+  cursor: pointer;
+  cursor: -webkit-grab;
+  cursor: grab;
+  opacity: 0.8;
+  touch-action: pan-x;
+}
+
+.rc-slider-handle:active {
+  border-color: rgb(255, 255, 255) !important;
+  box-shadow: 0 0 5px rgb(255, 255, 255) !important;
+}
+
+/* animation */
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 0 0 7px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255), 0 0 21px rgb(255, 255, 255), 0 0 42px #7EA2AA, 0 0 82px #7EA2AA, 0 0 92px #7EA2AA, 0 0 102px #7EA2AA, 0 0 151px #7EA2AA;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}
+@keyframes pulsate {
+  100% {
+    box-shadow: 0 0 4px rgb(255, 255, 255), 0 0 11px rgb(255, 255, 255), 0 0 19px rgb(255, 255, 255), 0 0 40px #7EA2AA, 0 0 80px #7EA2AA, 0 0 90px #7EA2AA, 0 0 100px #7EA2AA, 0 0 150px #7EA2AA;
+  }
+  0% {
+    box-shadow: 0 0 1px rgb(255, 255, 255), 0 0 2px rgb(255, 255, 255), 0 0 3px rgb(255, 255, 255), 0 0 5px #7EA2AA, 0 0 22px #7EA2AA, 0 0 27px #7EA2AA, 0 0 35px #7EA2AA, 0 0 40px #7EA2AA;
+  }
+}
+@keyframes pulsateEasy {
+  100% {
+    box-shadow: 0 0 4px rgb(255, 255, 255), 0 0 11px rgb(255, 255, 255), 0 0 19px rgb(255, 255, 255), 0 0 40px #64a791, 0 0 80px #64a791, 0 0 90px #64a791, 0 0 100px #64a791, 0 0 150px #64a791;
+  }
+  0% {
+    box-shadow: 0 0 1px rgb(255, 255, 255), 0 0 2px rgb(255, 255, 255), 0 0 3px rgb(255, 255, 255), 0 0 5px #64a791, 0 0 22px #64a791, 0 0 27px #64a791, 0 0 35px #64a791, 0 0 40px #64a791;
+  }
+}
+@keyframes pulsateMedium {
+  100% {
+    box-shadow: 0 0 4px rgb(255, 255, 255), 0 0 11px rgb(255, 255, 255), 0 0 19px rgb(255, 255, 255), 0 0 40px #5966a7, 0 0 80px #5966a7, 0 0 90px #5966a7, 0 0 100px #5966a7, 0 0 150px #5966a7;
+  }
+  0% {
+    box-shadow: 0 0 1px rgb(255, 255, 255), 0 0 2px rgb(255, 255, 255), 0 0 3px rgb(255, 255, 255), 0 0 5px #5966a7, 0 0 22px #5966a7, 0 0 27px #5966a7, 0 0 35px #5966a7, 0 0 40px #5966a7;
+  }
+}
+@keyframes pulsateHard {
+  100% {
+    box-shadow: 0 0 4px rgb(255, 255, 255), 0 0 11px rgb(255, 255, 255), 0 0 19px rgb(255, 255, 255), 0 0 40px #9C7A97, 0 0 80px #9C7A97, 0 0 90px #9C7A97, 0 0 100px #9C7A97, 0 0 150px #9C7A97;
+  }
+  0% {
+    box-shadow: 0 0 1px rgb(255, 255, 255), 0 0 2px rgb(255, 255, 255), 0 0 3px rgb(255, 255, 255), 0 0 5px #9C7A97, 0 0 22px #9C7A97, 0 0 27px #9C7A97, 0 0 35px #9C7A97, 0 0 40px #9C7A97;
+  }
+}
+
+/*# sourceMappingURL=Lobby.css.map */

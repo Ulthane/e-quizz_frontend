@@ -1,0 +1,42 @@
+// sass ./src/Scss/Modal.scss ./src/Components/Modal/Modal.css --watch
+@import './variable';
+
+.modal-custom {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(1, 1, 1, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.modal-custom.show {
+    opacity: 1;
+    pointer-events: visible;
+}
+
+.modal-custom.show .modal-custom-content {
+    transform: translateY(0);
+}
+
+.modal-custom-content {
+    width: 500px;
+    /* background-color: #fff; */
+    // background: rgb(50,50,50);
+    background: linear-gradient(90deg, lighten($charcoal, 10%) 0%, $charcoal 35%, darken($charcoal, 5%) 100%);
+    border-radius: 1rem;
+    padding: 1rem;
+    transform: translateY(-200px);
+    transition: all 0.3s ease-in-out;
+    color: $white;
+}
+
+.modal-custom-title {
+    margin: 0;
+}

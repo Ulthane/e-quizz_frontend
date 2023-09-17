@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.difficultyCard {
+  width: 200px;
+  height: 100px;
+  border-radius: 1em;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+.difficultyCard.easy {
+  background-color: #64a791;
+  border: 3px solid #172822;
+}
+.difficultyCard.easy.selected {
+  border: 0.2rem solid #fff;
+  box-shadow: 0 0 0.2rem rgb(255, 255, 255), 0 0 0.2rem rgb(255, 255, 255), 0 0 2rem #64a791, 0 0 0.8rem #64a791, 0 0 2.8rem #64a791, inset 0 0 1.3rem #64a791;
+}
+.difficultyCard.medium {
+  background-color: #5966a7;
+  border: 3px solid #121522;
+}
+.difficultyCard.medium.selected {
+  border: 0.2rem solid #fff;
+  box-shadow: 0 0 0.2rem rgb(255, 255, 255), 0 0 0.2rem rgb(255, 255, 255), 0 0 2rem #5966a7, 0 0 0.8rem #5966a7, 0 0 2.8rem #5966a7, inset 0 0 1.3rem #5966a7;
+}
+.difficultyCard.hard {
+  background-color: #9C7A97;
+  border: 3px solid #2a2029;
+}
+.difficultyCard.hard.selected {
+  border: 0.2rem solid #fff;
+  box-shadow: 0 0 0.2rem rgb(255, 255, 255), 0 0 0.2rem rgb(255, 255, 255), 0 0 2rem #9C7A97, 0 0 0.8rem #9C7A97, 0 0 2.8rem #9C7A97, inset 0 0 1.3rem #9C7A97;
+}
+.difficultyCard.disabled {
+  background-color: rgb(126, 126, 126) !important;
+}
+
+/*# sourceMappingURL=DifficultyCard.css.map */

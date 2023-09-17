@@ -1,0 +1,63 @@
+// sass ./src/Scss/DifficultyCard.scss ./src//Components/Lobby/DifficultyCard/DifficultyCard.css --watch
+
+@import "./variable";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.difficultyCard {
+    width: 200px;
+    height: 100px;
+    border-radius: 1em;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+
+    &.easy {
+        background-color: $cyan;
+        border: 3px solid darken($cyan, 40%);
+
+        &.selected {
+            border: 0.2rem solid #fff;
+            box-shadow: 0 0 .2rem $white,
+                        0 0 .2rem $white,
+                        0 0 2rem $cyan,
+                        0 0 0.8rem $cyan,
+                        0 0 2.8rem $cyan,
+                        inset 0 0 1.3rem $cyan; 
+        }
+    }
+
+    &.medium {
+        background-color: $violet;
+        border: 3px solid darken($violet, 40%);
+
+        &.selected {
+            border: 0.2rem solid #fff;
+            box-shadow: 0 0 .2rem $white,
+                        0 0 .2rem $white,
+                        0 0 2rem $violet,
+                        0 0 0.8rem $violet,
+                        0 0 2.8rem $violet,
+                        inset 0 0 1.3rem $violet; 
+        }
+    }
+
+    &.hard {
+        background-color: $pastel-violet;
+        border: 3px solid darken($pastel-violet, 40%);
+
+        &.selected {
+            border: 0.2rem solid #fff;
+            box-shadow: 0 0 .2rem $white,
+                        0 0 .2rem $white,
+                        0 0 2rem $pastel-violet,
+                        0 0 0.8rem $pastel-violet,
+                        0 0 2.8rem $pastel-violet,
+                        inset 0 0 1.3rem $pastel-violet; 
+        }
+    }
+
+    &.disabled {
+        background-color: $disabled !important;
+    }
+}

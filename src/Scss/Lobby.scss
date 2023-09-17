@@ -1,0 +1,353 @@
+// sass ./src/Scss/Lobby.scss ./src//Components/Lobby/Lobby.css --watch
+@import './variable';
+
+.neonTextBase {
+    font-size: 6.2rem;
+    color: $white;
+    text-shadow:
+        0 0 7px $white,
+        0 0 10px $white,
+        0 0 21px $white,
+        0 0 42px $pastel-blue,
+        0 0 82px $pastel-blue,
+        0 0 92px $pastel-blue,
+        0 0 102px $pastel-blue,
+        0 0 151px $pastel-blue;
+}
+
+.neonTextFlash {
+    animation: flicker 1.5s infinite alternate;
+    font-size: 6.2rem;
+    color: $white;
+}
+
+.borderNeon {
+    // animation: pulsate 1.5s infinite alternate;  
+    border: 0.2rem solid $white;
+    border-radius: 2rem;
+    padding: 0.75em;
+    padding-top: 0.3em;
+    box-shadow: 0 0 .2rem $white,
+              0 0 .2rem $white,
+              0 0 2rem $pastel-blue,
+              0 0 0.8rem $pastel-blue,
+              0 0 2.8rem $pastel-blue,
+              inset 0 0 1.3rem $pastel-blue; 
+}
+
+.infoCard {
+    background-color: lighten($charcoal, 10%);
+    border-radius: 2rem;
+    box-shadow: 2px 2px 15px -1px #202020;
+
+    &.lobby {
+        height: 460px;
+    }
+
+    &.play {
+        height: 324px;
+    }
+
+    &.question {
+        height: 60px;
+        padding: 10px;
+        border-radius: 0.5em;
+    }
+}
+
+.roomJoin {
+
+    &.input {
+        border: none;
+        width: 250px;
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+        padding: 10px;
+        background-color: darken($charcoal, 5%);
+        color: $white;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &.button {
+        border-top-right-radius: 1em;
+        border-bottom-right-radius: 1em;
+        border: none;
+        color: white;
+        font-weight: bold;
+
+        &.join {
+            background-color: $pastel-blue;
+
+            &:hover {
+                background-color: darken($pastel-blue, 5%);
+            }
+        }
+        
+        &.copy {
+            background-color: $pastel-brown;
+
+            &:hover {
+                background-color: darken($pastel-brown, 5%);
+            }
+        }
+
+        &.change {
+            background-color: $pastel-pink;
+
+            &:hover {
+                background-color: darken($pastel-pink, 5%);
+            }
+        }
+    }
+}
+
+.cardPlayer {
+    background-color: darken($charcoal, 5%);
+    color: white;
+    min-height: 50px;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 1em;
+    box-shadow: 2px 2px 15px -1px #202020;
+    font-weight: bold;
+    justify-content: space-between;
+    padding-right: 25px;
+}
+
+.startButton {
+    margin-top: 25px;
+    background: transparent;
+    color: $white;
+    border: none;
+    width: 100px;
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 0 0 .2rem $white,
+                0 0 .2rem $white,
+                0 0 1.0rem $pastel-blue,
+                0 0 0.5rem $pastel-blue,
+                0 0 1.0rem $pastel-blue,
+                inset 0 0 1rem $pastel-blue;
+
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+
+    animation: pulsate 2s ease-in-out infinite alternate;
+
+    &:disabled {
+        pointer-events: none;
+        opacity: 0.75;
+        box-shadow: none !important;
+        border: 1px solid $white;
+    }
+    
+    &.easy {
+        &:hover {
+            box-shadow: 0 0 .2rem $white,
+                        0 0 .2rem $white,
+                        0 0 1rem $cyan,
+                        0 0 0.5rem $cyan,
+                        0 0 1rem $cyan,
+                        inset 0 0 1rem $cyan;
+            background-color: $cyan;
+            animation: pulsateEasy 2s ease-in-out infinite alternate;
+        }
+    }
+
+    &.medium {
+        &:hover {
+            box-shadow: 0 0 .2rem $white,
+                        0 0 .2rem $white,
+                        0 0 2rem $violet,
+                        0 0 0.8rem $violet,
+                        0 0 2.8rem $violet,
+                        inset 0 0 1.3rem $violet;
+            background-color: $violet;
+            animation: pulsateMedium 2s ease-in-out infinite alternate;
+        }
+    }
+
+    &.hard {
+        &:hover {
+            box-shadow: 0 0 .2rem $white,
+                        0 0 .2rem $white,
+                        0 0 2rem $pastel-violet,
+                        0 0 0.8rem $pastel-violet,
+                        0 0 2.8rem $pastel-violet,
+                        inset 0 0 1.3rem $pastel-violet;
+            background-color: $pastel-violet;
+            animation: pulsateHard 2s ease-in-out infinite alternate;
+        }
+    }
+}
+
+.rc-slider {
+    &.disabled {
+        opacity: 0.4;
+        background-color: transparent;
+    }
+}
+
+.rc-slider-track {
+    background-color: $pastel-blue !important;
+}
+
+.rc-slider-handle {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    margin-top: -5px;
+    background-color: #fff;
+    border: solid 2px $pastel-blue !important;
+    border-radius: 50%;
+    cursor: pointer;
+    cursor: -webkit-grab;
+    cursor: grab;
+    opacity: 0.8;
+    touch-action: pan-x;
+}
+
+.rc-slider-handle:active {
+    border-color: $white !important;
+    box-shadow: 0 0 5px $white !important;
+}
+
+/* animation */
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 7px $white,
+        0 0 10px $white,
+        0 0 21px $white,
+        0 0 42px $pastel-blue,
+        0 0 82px $pastel-blue,
+        0 0 92px $pastel-blue,
+        0 0 102px $pastel-blue,
+        0 0 151px $pastel-blue;
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+}
+
+@keyframes pulsate {
+    
+    100% {
+        box-shadow:
+        0 0 4px $white,
+        0 0 11px $white,
+        0 0 19px $white,
+        0 0 40px $pastel-blue,
+        0 0 80px $pastel-blue,
+        0 0 90px $pastel-blue,
+        0 0 100px $pastel-blue,
+        0 0 150px $pastel-blue; 
+    }
+    
+    0% {
+        box-shadow:
+      0 0 1px $white,
+      0 0 2px $white,
+      0 0 3px $white,
+      0 0 5px $pastel-blue,
+      0 0 22px $pastel-blue,
+      0 0 27px $pastel-blue,
+      0 0 35px $pastel-blue,
+      0 0 40px $pastel-blue;
+  }
+
+}
+
+@keyframes pulsateEasy {
+    
+    100% {
+        box-shadow:
+        0 0 4px $white,
+        0 0 11px $white,
+        0 0 19px $white,
+        0 0 40px $cyan,
+        0 0 80px $cyan,
+        0 0 90px $cyan,
+        0 0 100px $cyan,
+        0 0 150px $cyan; 
+    }
+    
+    0% {
+        box-shadow:
+      0 0 1px $white,
+      0 0 2px $white,
+      0 0 3px $white,
+      0 0 5px $cyan,
+      0 0 22px $cyan,
+      0 0 27px $cyan,
+      0 0 35px $cyan,
+      0 0 40px $cyan;
+  }
+  
+}
+
+@keyframes pulsateMedium {
+    
+    100% {
+        box-shadow:
+        0 0 4px $white,
+        0 0 11px $white,
+        0 0 19px $white,
+        0 0 40px $violet,
+        0 0 80px $violet,
+        0 0 90px $violet,
+        0 0 100px $violet,
+        0 0 150px $violet; 
+    }
+    
+    0% {
+        box-shadow:
+      0 0 1px $white,
+      0 0 2px $white,
+      0 0 3px $white,
+      0 0 5px $violet,
+      0 0 22px $violet,
+      0 0 27px $violet,
+      0 0 35px $violet,
+      0 0 40px $violet;
+  }
+  
+}
+
+@keyframes pulsateHard {
+    
+    100% {
+        box-shadow:
+        0 0 4px $white,
+        0 0 11px $white,
+        0 0 19px $white,
+        0 0 40px $pastel-violet,
+        0 0 80px $pastel-violet,
+        0 0 90px $pastel-violet,
+        0 0 100px $pastel-violet,
+        0 0 150px $pastel-violet; 
+    }
+    
+    0% {
+        box-shadow:
+      0 0 1px $white,
+      0 0 2px $white,
+      0 0 3px $white,
+      0 0 5px $pastel-violet,
+      0 0 22px $pastel-violet,
+      0 0 27px $pastel-violet,
+      0 0 35px $pastel-violet,
+      0 0 40px $pastel-violet;
+  }
+  
+}

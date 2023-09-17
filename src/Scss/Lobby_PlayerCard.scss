@@ -1,0 +1,15 @@
+// sass ./src/Scss/Lobby_PlayerCard.scss ./src/Components/Lobby/PlayerCard/PlayerCard.css --watch
+@import './variable';
+
+.host {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $white;
+    box-shadow: 0 0 .2rem $white,
+                0 0 .2rem $white,
+                0 0 2rem $bronze,
+                0 0 0.8rem $bronze,
+                0 0 2.8rem $bronze,
+                inset 0 0 1.3rem $bronze; 
+}

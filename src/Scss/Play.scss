@@ -1,0 +1,195 @@
+// sass ./src/Scss/Play.scss ./src/Components/Play/Play.css --watch
+
+@import './variable';
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+.category {
+    font-family: 'Yellowtail', cursive;
+    color: $white;
+    text-shadow:0 0 7px $white,
+                0 0 10px $white,
+                0 0 21px $white;
+    font-size: 5.2rem;
+}
+
+.responseBtn {
+    padding: 10px;
+    color: white;
+    border: 0.2rem solid #fff;;
+    border-radius: 5rem;
+    width: 350px;
+    margin: 1em;
+    font-weight: bold;
+
+    &.response_0 {
+        background-color: lighten($pastel-brown, 10%);
+        
+        &.selected, &:hover {
+            border: 0.2rem solid #fff;
+            box-shadow: 0 0 .2rem $white,
+                        0 0 .2rem $white,
+                        0 0 2rem $pastel-brown,
+                        0 0 0.8rem $pastel-brown,
+                        0 0 2.8rem $pastel-brown,
+                        inset 0 0 1.3rem $pastel-brown; 
+        }
+        
+        &:disabled {
+            background-color: grey;
+            pointer-events: none;
+            opacity: 0.3;    
+        }
+    }
+
+    &.response_1 {
+        background-color: lighten($cyan, 10%);
+
+        &.selected, &:hover {
+            border: 0.2rem solid #fff;
+            box-shadow: 0 0 .2rem $white,
+                        0 0 .2rem $white,
+                        0 0 2rem $cyan,
+                        0 0 0.8rem $cyan,
+                        0 0 2.8rem $cyan,
+                        inset 0 0 1.3rem $cyan; 
+        }
+
+        &:disabled {
+            background-color: grey;
+            pointer-events: none;
+            opacity: 0.3;    
+        }
+    }
+
+    &.response_2 {
+        background-color: $pastel-pink;
+
+        &.selected, &:hover {
+            border: 0.2rem solid #fff;
+            box-shadow: 0 0 .2rem $white,
+                        0 0 .2rem $white,
+                        0 0 2rem $pastel-pink,
+                        0 0 0.8rem $pastel-pink,
+                        0 0 2.8rem $pastel-pink,
+                        inset 0 0 1.3rem $pastel-pink; 
+        }
+
+        &:disabled {
+            background-color: grey;
+            pointer-events: none;
+            opacity: 0.3;    
+        }
+    }
+
+    &.response_3 {
+        background-color: lighten($violet, 10%);
+
+        &.selected, &:hover {
+            border: 0.2rem solid #fff;
+            box-shadow: 0 0 .2rem $white,
+                        0 0 .2rem $white,
+                        0 0 2rem $violet,
+                        0 0 0.8rem $violet,
+                        0 0 2.8rem $violet,
+                        inset 0 0 1.3rem $violet; 
+        }
+
+        &:disabled {
+            background-color: grey;
+            pointer-events: none;
+            opacity: 0.3;    
+        }
+    }
+
+}
+
+.responseBtn_2 {
+    padding: 10px;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 5rem;
+    width: 350px;
+
+    &.selected {
+        border: 0.2rem solid #fff;
+        box-shadow: 0 0 .2rem $white,
+                    0 0 .2rem $white,
+                    0 0 2rem $cyan,
+                    0 0 0.8rem $cyan,
+                    0 0 2.8rem $cyan,
+                    inset 0 0 1.3rem $cyan; 
+    }
+}
+
+.responseBtn_3 {
+    padding: 10px;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 5rem;
+    width: 350px;
+
+    &.selected {
+        border: 0.2rem solid #fff;
+        box-shadow: 0 0 .2rem $white,
+                    0 0 .2rem $white,
+                    0 0 2rem $cyan,
+                    0 0 0.8rem $cyan,
+                    0 0 2.8rem $cyan,
+                    inset 0 0 1.3rem $cyan; 
+    }
+}
+
+.responseBtn_4 {
+    padding: 10px;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 5rem;
+    width: 350px;
+
+    &.selected {
+        border: 0.2rem solid #fff;
+        box-shadow: 0 0 .2rem $white,
+                    0 0 .2rem $white,
+                    0 0 2rem $cyan,
+                    0 0 0.8rem $cyan,
+                    0 0 2.8rem $cyan,
+                    inset 0 0 1.3rem $cyan; 
+    }
+}
+
+.nbQuestion {
+    background-color: $white;
+    width: 75px;
+    height: 54px;
+    border-bottom-left-radius: 2em;
+    border-top-right-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Yellowtail', cursive;
+    color: lighten($charcoal,15%);
+}
+
+.difficulty {
+    background-color: $white;
+    width: 180px;
+    height: 54px;
+    border-bottom-right-radius: 2em;
+    border-top-left-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Yellowtail', cursive;
+
+    &.easy {
+        color: $cyan;
+    }
+
+    &.medium {
+        color: $violet;
+    }
+
+    &.hard {
+        color: $pastel-violet;
+    }
+}

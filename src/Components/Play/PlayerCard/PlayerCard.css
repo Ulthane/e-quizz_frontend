@@ -1,0 +1,25 @@
+.bgPlayer {
+  background-color: #181b1a;
+  width: 175px;
+  height: 80px;
+  border-radius: 1rem;
+  padding: 10px;
+  box-shadow: 2px 2px 15px -1px #202020;
+}
+.bgPlayer.gold {
+  border: 3px solid rgb(226, 188, 19);
+  color: rgb(226, 188, 19);
+  box-shadow: 0 0 0.2rem rgb(255, 255, 255), 0 0 0.2rem rgb(255, 255, 255), 0 0 2rem rgb(226, 188, 19), 0 0 0.8rem rgb(226, 188, 19);
+}
+.bgPlayer.silver {
+  border: 3px solid rgb(185, 185, 185);
+  color: rgb(185, 185, 185);
+  box-shadow: 0 0 0.2rem rgb(255, 255, 255), 0 0 0.2rem rgb(255, 255, 255), 0 0 2rem rgb(185, 185, 185), 0 0 0.8rem rgb(185, 185, 185);
+}
+.bgPlayer.bronze {
+  border: 3px solid rgb(226, 112, 19);
+  color: rgb(226, 112, 19);
+  box-shadow: 0 0 0.2rem rgb(255, 255, 255), 0 0 0.2rem rgb(255, 255, 255), 0 0 2rem rgb(226, 112, 19), 0 0 0.8rem rgb(226, 112, 19);
+}
+
+/*# sourceMappingURL=PlayerCard.css.map */

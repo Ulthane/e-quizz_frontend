@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+.category {
+  font-family: "Yellowtail", cursive;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 7px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255), 0 0 21px rgb(255, 255, 255);
+  font-size: 5.2rem;
+}
+
+.responseBtn {
+  padding: 10px;
+  color: white;
+  border: 0.2rem solid #fff;
+  border-radius: 5rem;
+  width: 350px;
+  margin: 1em;
+  font-weight: bold;
+}
+.responseBtn.response_0 {
+  background-color: #bea39d;
+}
+.responseBtn.response_0.selected, .responseBtn.response_0:hover {
+  border: 0.2rem solid #fff;
+  box-shadow: 0 0 0.2rem rgb(255, 255, 255), 0 0 0.2rem rgb(255, 255, 255), 0 0 2rem #AA867E, 0 0 0.8rem #AA867E, 0 0 2.8rem #AA867E, inset 0 0 1.3rem #AA867E;
+}
+.responseBtn.response_0:disabled {
+  background-color: grey;
+  pointer-events: none;
+  opacity: 0.3;
+}
+.responseBtn.response_1 {
+  background-color: #85b9a8;
+}
+.responseBtn.response_1.selected, .responseBtn.response_1:hover {
+  border: 0.2rem solid #fff;
+  box-shadow: 0 0 0.2rem rgb(255, 255, 255), 0 0 0.2rem rgb(255, 255, 255), 0 0 2rem #64a791, 0 0 0.8rem #64a791, 0 0 2.8rem #64a791, inset 0 0 1.3rem #64a791;
+}
+.responseBtn.response_1:disabled {
+  background-color: grey;
+  pointer-events: none;
+  opacity: 0.3;
+}
+.responseBtn.response_2 {
+  background-color: #b097ce;
+}
+.responseBtn.response_2.selected, .responseBtn.response_2:hover {
+  border: 0.2rem solid #fff;
+  box-shadow: 0 0 0.2rem rgb(255, 255, 255), 0 0 0.2rem rgb(255, 255, 255), 0 0 2rem #b097ce, 0 0 0.8rem #b097ce, 0 0 2.8rem #b097ce, inset 0 0 1.3rem #b097ce;
+}
+.responseBtn.response_2:disabled {
+  background-color: grey;
+  pointer-events: none;
+  opacity: 0.3;
+}
+.responseBtn.response_3 {
+  background-color: #7a85b9;
+}
+.responseBtn.response_3.selected, .responseBtn.response_3:hover {
+  border: 0.2rem solid #fff;
+  box-shadow: 0 0 0.2rem rgb(255, 255, 255), 0 0 0.2rem rgb(255, 255, 255), 0 0 2rem #5966a7, 0 0 0.8rem #5966a7, 0 0 2.8rem #5966a7, inset 0 0 1.3rem #5966a7;
+}
+.responseBtn.response_3:disabled {
+  background-color: grey;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.responseBtn_2 {
+  padding: 10px;
+  color: white;
+  border: 1px solid grey;
+  border-radius: 5rem;
+  width: 350px;
+}
+.responseBtn_2.selected {
+  border: 0.2rem solid #fff;
+  box-shadow: 0 0 0.2rem rgb(255, 255, 255), 0 0 0.2rem rgb(255, 255, 255), 0 0 2rem #64a791, 0 0 0.8rem #64a791, 0 0 2.8rem #64a791, inset 0 0 1.3rem #64a791;
+}
+
+.responseBtn_3 {
+  padding: 10px;
+  color: white;
+  border: 1px solid grey;
+  border-radius: 5rem;
+  width: 350px;
+}
+.responseBtn_3.selected {
+  border: 0.2rem solid #fff;
+  box-shadow: 0 0 0.2rem rgb(255, 255, 255), 0 0 0.2rem rgb(255, 255, 255), 0 0 2rem #64a791, 0 0 0.8rem #64a791, 0 0 2.8rem #64a791, inset 0 0 1.3rem #64a791;
+}
+
+.responseBtn_4 {
+  padding: 10px;
+  color: white;
+  border: 1px solid grey;
+  border-radius: 5rem;
+  width: 350px;
+}
+.responseBtn_4.selected {
+  border: 0.2rem solid #fff;
+  box-shadow: 0 0 0.2rem rgb(255, 255, 255), 0 0 0.2rem rgb(255, 255, 255), 0 0 2rem #64a791, 0 0 0.8rem #64a791, 0 0 2.8rem #64a791, inset 0 0 1.3rem #64a791;
+}
+
+.nbQuestion {
+  background-color: rgb(255, 255, 255);
+  width: 75px;
+  height: 54px;
+  border-bottom-left-radius: 2em;
+  border-top-right-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Yellowtail", cursive;
+  color: #545f59;
+}
+
+.difficulty {
+  background-color: rgb(255, 255, 255);
+  width: 180px;
+  height: 54px;
+  border-bottom-right-radius: 2em;
+  border-top-left-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Yellowtail", cursive;
+}
+.difficulty.easy {
+  color: #64a791;
+}
+.difficulty.medium {
+  color: #5966a7;
+}
+.difficulty.hard {
+  color: #9C7A97;
+}
+
+/*# sourceMappingURL=Play.css.map */

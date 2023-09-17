@@ -1,0 +1,9 @@
+// sass ./src/Scss/Home.scss ./src/Pages/Home/Home.css --watch
+@import "./variable";
+
+.footer {
+    &-text {
+        font-size: 12px;
+        color: $white;
+    }
+}

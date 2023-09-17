@@ -1,0 +1,38 @@
+// sass ./src/Scss/Play_PlayerCard.scss ./src/Components/Play/PlayerCard/PlayerCard.css --watch
+@import './variable';
+
+.bgPlayer {
+    background-color: darken($charcoal, 10%);
+    width: 175px;
+    height: 80px;
+    border-radius: 1rem;
+    padding: 10px;
+    box-shadow: 2px 2px 15px -1px #202020;
+
+    &.gold {
+        border: 3px solid $gold;
+        color: $gold;
+        box-shadow: 0 0 .2rem $white,
+                    0 0 .2rem $white,
+                    0 0 2rem $gold,
+                    0 0 0.8rem $gold,
+    }
+
+    &.silver {
+        border: 3px solid $silver;
+        color: $silver;
+        box-shadow: 0 0 .2rem $white,
+                    0 0 .2rem $white,
+                    0 0 2rem $silver,
+                    0 0 0.8rem $silver,
+    }
+
+    &.bronze {
+        border: 3px solid $bronze;
+        color: $bronze;
+        box-shadow: 0 0 .2rem $white,
+                    0 0 .2rem $white,
+                    0 0 2rem $bronze,
+                    0 0 0.8rem $bronze,
+    }
+}

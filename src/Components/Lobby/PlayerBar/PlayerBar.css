@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+.playerBarBG {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 250px;
+  height: 75px;
+  background-color: #181b1a;
+  border-radius: 1rem;
+  padding: 10px;
+}
+.playerBarBG_btn {
+  border: none;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: "Lato", sans-serif;
+}
+.playerBarBG_btn:hover {
+  text-shadow: 0 0 7px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255), 0 0 21px rgb(255, 255, 255);
+}
+
+.playerBarModal {
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+}
+
+/*# sourceMappingURL=PlayerBar.css.map */
