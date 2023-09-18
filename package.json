@@ -15,7 +15,7 @@
     "react-scripts": "5.0.1",
     "react-toastify": "^9.1.1",
     "react-use": "^17.4.0",
-    "sass": "^1.57.1",
+    "sass": "^1.67.0",
     "socket.io-client": "^4.5.4",
     "web-vitals": "^2.1.4"
   },

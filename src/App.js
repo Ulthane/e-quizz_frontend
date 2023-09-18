@@ -32,7 +32,7 @@ function App() {
       endpoint = "https://e-quizz.gamosaurus.fr"; // PROD
       break;
     default:
-      endpoint = "http://localhost:5000"; // DEV
+      endpoint = "http://10.0.0.203:5000"; // DEV
       break;
   }
 

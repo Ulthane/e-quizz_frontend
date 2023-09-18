@@ -7,6 +7,7 @@ import PlayerCard from './PlayerCard/PlayerCard';
 
 // CSS
 import './Play.css';
+import Timer from '../Timer/Timer';
 
 export default function Play({ roomInfo, response, setResponse }) {
 
@@ -79,8 +80,9 @@ export default function Play({ roomInfo, response, setResponse }) {
 
         <div className='row'>
             <div className='d-flex justify-content-center mt-4'>
+                <Timer timer={roomInfo.ti}/>
 
-            <CountdownCircleTimer
+            {/* <CountdownCircleTimer
                 isPlaying
                 duration={15}
                 size={100}
@@ -88,7 +90,7 @@ export default function Play({ roomInfo, response, setResponse }) {
                 colors={['#fd695e']}
                 >
                 {({ remainingTime }) => <span className='text-white fs-3 fw-bold'>{remainingTime}</span>}
-            </CountdownCircleTimer>
+            </CountdownCircleTimer> */}
             </div>
         </div>
     </>
